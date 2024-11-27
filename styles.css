@@ -25,8 +25,8 @@ header {
 }
 
 #logo {
-  width: 200px; /* Establecer el ancho a 300px */
-  height: 200px; /* Establecer la altura a 300px */
+  width: 100px; /* Establecer el ancho a 300px */
+  height: 100px; /* Establecer la altura a 300px */
   object-fit: cover; /* Asegura que la imagen no se deforme */
 }
 
