@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;  /* Centrado vertical */
+  justify-content: space-between;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  position: relative;  /* Necesario para centrar el título */
+}
+
+.logo-container {
+  flex: 1;
+}
+
+#logo {
+  width: 200px; /* Establecer el ancho a 300px */
+  height: 200px; /* Establecer la altura a 300px */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+.hotel-name h1 {
+  font-family: 'Playfair Display', serif; /* Usamos la fuente elegante */
+  font-weight: 700; /* Aseguramos que el texto sea grueso */
+  font-size: 36px; /* Tamaño grande para el nombre del hotel */
+  color: white; /* El color del texto será blanco */
+  text-align: center; /* Centrado horizontal */
+  position: absolute; /* Posicionamos el texto en el encabezado */
+  left: 50%; /* Centramos horizontalmente */
+  transform: translateX(-50%); /* Aseguramos que quede perfectamente centrado */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#inicio {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.room {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room button {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.room button:hover {
+  background-color: #0055a5;
+}
+
+#galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#galeria img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0055a5;
+}
+
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form input {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  background-color: #003366;
+  color: white;
+}
+
+.modal-content button:hover {
+  background-color: #0055a5;
+}
