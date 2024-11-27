@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+#logo {
+  width: 300px; /* Establecer el ancho a 300px */
+  height: 300px; /* Establecer la altura a 300px */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+/* Estilo para el nombre del hotel */
+.hotel-name h1 {
+  font-family: 'Playfair Display', serif; /* Usamos la fuente elegante */
+  font-weight: 700; /* Aseguramos que el texto sea grueso */
+  font-size: 40px; /* Tamaño grande para el nombre del hotel */
+  color: white; /* El color del texto será blanco */
+  text-align: center; /* Alineamos el texto al centro */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centrado horizontal */
+}
+
+/* Estilo para el menú de navegación */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Sección de galería */
+#galeria {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo de la galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  gap: 20px;
+  justify-items: center; /* Asegura que los elementos se centren horizontalmente */
+  max-width: 1200px; /* Limita el ancho máximo de la galería */
+  width: 100%; /* Asegura que la galería ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra la galería horizontalmente */
+}
+
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra contenido verticalmente */
+  align-items: center; /* Centra contenido horizontalmente */
+}
+
+.gallery-item img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-bottom: 2px solid #ddd;
+  object-fit: cover; /* Asegura que la imagen cubra bien el espacio */
+}
+
+.gallery-item p {
+  padding: 10px;
+  font-size: 16px;
+  color: #003366;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+}
